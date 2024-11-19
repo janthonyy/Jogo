@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+void ranking(int p){
+    int ranking1;
+    int ranking2;
+    int ranking3; 
+
+if(p>ranking1){
+    ranking3=ranking2;
+    ranking2=ranking1;
+    ranking1=p;
+}
+if(p>ranking2 && p<ranking1){
+    ranking3=ranking2;
+    ranking2=p;
+}
+if(p>ranking3 && p<ranking2 && p<ranking1){
+    ranking3=p;
+}
+printf("Rankig");
+printf("ranking 1:%d",p);
+printf("ranking 2:%d",p);
+printf("ranking 3:%d",p);   
+}
